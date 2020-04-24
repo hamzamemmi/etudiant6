@@ -20,7 +20,7 @@ char rep4[3];
 
 typedef struct enigme
 {
-enigmes_question EN[30];
+enigmes_question en[30];
 int reponse;
 }enigme;
 
