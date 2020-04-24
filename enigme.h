@@ -7,35 +7,26 @@
 #include<SDL/SDL_image.h> 
 #include <SDL/SDL_ttf.h>
 #include <string.h> 
-#include <SDL/SDL_mixer.h>
 
-typedef struct
+typedef struct enigmes_question
 {
-	char reponsevrai[3];
-	char quest[400];
-	char rep1[3];
-	char rep2[3];
-} enigme_question;
+char reponse[4];
+char q[400];
+char rep1[3];
+char rep2[3];
+char rep3[3];
+char rep4[3];
+}enigmes_question;
 
-typedef struct 
+typedef struct enigme
 {
-	enigme_question EN[30];
-	int reponse;
-} enigme_reponse;
+enigmes_question EN[30];
+int reponse;
+}enigme;
 
-typedef struct 
-{
-	 SDL_Surface * img;
- 	 SDL_Rect p;
-} enigme;
-
-int initialiser_enigme();
-// void generer(SDL_Surface * screen  , char image [],enigme *E ,int *aleatoire);
+int initialiser_enigmes();
+void generation(enigme *E,int val);
 void affichage(enigme *E ,int val);
-int resolution_enigmes(char reponse_choisie[4], int val,enigme *E);
-int solution_enigme (char image [], int *reponse) ;
-int resolution (int * running ,int *run);
-int afficher_resultat (SDL_Surface * screen,int s,int r,enigme *EN, int reponse) ;
+int resolution_enigmes(char reponse_choisie[4], int val,enigme *E);// 
 
 #endif  /* ENIGME_H_ */
-
