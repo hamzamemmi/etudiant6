@@ -90,17 +90,17 @@ void reponse(SDL_Surface *ecran,int d)
 
                     if (i==1 && d==1)
                     {
-                        good(ecran);
+                        game(ecran);
                         continuer=0;
                     }
                     else if (i==2 && d==2)
                     {
-                        good(ecran);
+                        game(ecran);
                         continuer=0;
                     }
                     else if (i==2 && d==3)
                     {
-                        good(ecran);
+                        game(ecran);
                         continuer=0;
                     }
                     else
