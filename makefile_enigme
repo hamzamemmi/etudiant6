@@ -1,4 +1,0 @@
-prog:enigmeh.o enigmec.o enigme.o	gcc enigmeh.o enigmec.o enigme.o -o prog
-enigme.o:enigme.c	gcc -c enigme.c
-enigmec.o:enigmec.c	gcc -c engimec.c
-enigmeh.o:enigme.h	gcc -c enigmeh.h
