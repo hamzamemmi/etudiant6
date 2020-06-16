@@ -43,7 +43,7 @@ int main(int argc,char *argv[])
 
     SDL_BlitSurface(backg,NULL, ecran, &positiond);
     SDL_Flip(ecran);
-    quiz(ecran,d);
+    enigme(ecran,d);
     reponse(ecran,d);
     SDL_FreeSurface(backg);
     TTF_CloseFont(police);
