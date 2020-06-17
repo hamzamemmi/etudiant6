@@ -174,3 +174,41 @@ void reponse(SDL_Surface *ecran,int d)
 
 
 }
+
+/*int resolution (int * running,int *run )
+{
+	SDL_Event event ;
+  int r=0 ;
+int doing=1;
+while(doing){
+	SDL_PollEvent(&event);
+	switch(event.type)
+	{
+		  case SDL_QUIT:
+			        *running= 0 ;
+                *run = 0;
+				break ;
+
+       case SDL_KEYDOWN : 
+            switch( event.key.keysym.sym )
+                {
+			  case  SDLK_a: 
+			  r= 1;
+doing=0;
+			   break ;
+			   case  SDLK_z :
+			   r= 2;
+doing=0;
+			   break;
+			   case SDLK_e: 
+			   r=3 ;
+doing=0;
+			   break;
+			    }
+       break ;
+
+                 
+	}}
+  return r ;
+}
+*/
