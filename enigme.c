@@ -6,7 +6,7 @@
 #include "enigme.h"
 #include <string.h>
 
-void solution(SDL_Surface *ecran,int d)
+void wrong(SDL_Surface *ecran,int d)
 {
     char im[100];
     SDL_Surface *image1 = NULL;
@@ -20,11 +20,11 @@ void solution(SDL_Surface *ecran,int d)
     image1= IMG_Load("WRONG.png");
     SDL_BlitSurface(image1,NULL,ecran,&positionFond1);
     SDL_Flip(ecran);
-    SDL_Delay(3000);
+    SDL_Delay(50);
 
 }
 
-void game(SDL_Surface *ecran)
+void correct(SDL_Surface *ecran)
 {
     char im[100];
     SDL_Surface *image = NULL;
@@ -35,7 +35,7 @@ void game(SDL_Surface *ecran)
     image= IMG_Load(im);
     SDL_BlitSurface(image,NULL,ecran,&positionFond);
     SDL_Flip(ecran);
-    SDL_Delay(5000);
+    SDL_Delay(50);
 }
 
 void enigme(SDL_Surface *ecran,int d)
